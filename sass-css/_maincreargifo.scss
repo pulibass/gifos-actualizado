@@ -1,0 +1,265 @@
+@import './variables';
+@import './mixins';
+
+
+.contenedor-camara {
+    width: 100%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+
+    .camara {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        height: 400px;
+        margin: auto;
+
+
+        .img-camara1 {
+            width: 100%;
+            height: 30%;
+            padding: 0;
+            margin-left: 30px;
+        }
+
+        .img-camara2 {
+            width: 70%;
+            height: 30%;
+            padding: 0;
+            margin-left: 30px;
+        }
+    }
+
+    .cuadro-camara {
+        width: 100%;
+        height: 400px;
+        margin: auto;
+
+
+
+        .recuadro-camara {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            width: 90%;
+            height: 360px;
+            border: 1px solid $primary-color1;
+            margin: auto;
+
+            body.dark & {
+                border: 1px solid $primary-color;
+            }
+
+            .contenedor-paths1-2 {
+                height: 360px;
+                width: 30%;
+                margin: auto;
+                margin-left: 0px;
+
+            }
+
+            .path1 {
+                width: 20px;
+                height: 20px;
+                border-top: 2px solid $primary-color2;
+                border-left: 2px solid $primary-color2;
+                margin: 15px 12px;
+            }
+
+            .path2 {
+                width: 20px;
+                height: 20px;
+                border-bottom: 2px solid $primary-color2;
+                border-left: 2px solid $primary-color2;
+                margin: 290px 12px;
+            }
+
+
+            .contenedor-paths3-4 {
+                width: 30%;
+                margin: auto;
+                margin-right: 0px;
+                height: 360px;
+
+            }
+
+            .path3 {
+                width: 20px;
+                height: 20px;
+                border-top: 2px solid $primary-color2;
+                border-right: 2px solid $primary-color2;
+                margin: 15px 0px;
+            }
+
+            .path4 {
+                width: 20px;
+                height: 20px;
+                border-bottom: 2px solid $primary-color2;
+                border-right: 2px solid $primary-color2;
+                margin: 290px 0px;
+            }
+
+            .imagen-medio {
+                .titulo-crear-gifo {
+                    text-align: center;
+                    margin:100px auto;
+                    color: $primary-color1;
+                    font-family: $fonts-primary1;
+
+                    body.dark & {
+                        color: $primary-color;
+
+                    }
+
+                }
+
+                .titulo-crear-gifo span {
+                    color: $primary-color2;
+                    font-family: $fonts-primary1;
+                }
+                .parrafo-crear-gifo{
+                    margin-top: -90px;
+                    font-size: 13px;
+                    text-align: center;
+                    line-height: 19px;
+                    color: $primary-color4;
+                    font-family: $fonts-primary2;
+                    body.dark & {
+                        color: $primary-color;
+            
+                    }
+                }
+            }
+
+        }
+
+        .contenedor-numeros {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            margin: auto;
+            width: 100%;
+            height: 40px;
+            text-align: center;
+
+            .button-numeros {
+                margin: 5px;
+                width: 10%;
+
+            }
+
+            .numeros {
+
+                width: 30px;
+                height: 30px;
+                border: 1px solid $primary-color1;
+                border-radius: 80px;
+                color: $primary-color1;
+                background-color: $primary-color;
+                margin: 0px;
+                cursor: pointer;
+                font-weight: bold;
+
+
+            }
+
+            .numeros:hover {
+                background-color: $primary-color1;
+                color: $primary-color;
+            }
+
+
+        }
+
+        .linea-bajo-numeros {
+            width: 100%;
+            height: 3px;
+            background-color: $primary-color1;
+
+            body.dark & {
+                background-color: $primary-color;
+
+
+            }
+        }
+    }
+
+
+    .rollo-camara {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+        align-self: baseline;
+        width: 100%;
+        height: 400px;
+
+    }
+
+    .img-rollo-camara {
+        justify-content: center;
+        align-items: baseline;
+        align-self: baseline;
+        width: 50%;
+        height: 30%;
+        margin-top: 300px;
+        margin-right: 60px;
+
+    }
+}
+
+
+.grabar {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $primary-color1;
+    border-radius: 25px;
+    border-radius: 25px;
+    width: 127px;
+    max-width: 130px;
+    height: 50px;
+
+    body.dark & {
+        border: 1px solid $primary-color;
+
+
+    }
+}
+
+.grabar a {
+    font-family: $fonts-primary1;
+    font-weight: bold;
+    font-size: 13px;
+    color: #572EE5;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: none;
+
+    body.dark & {
+        color: $primary-color;
+
+    }
+}
+
+.grabar:hover {
+    background-color: $primary-color1;
+    transition: 0s all;
+}
+
+.grabar a:hover {
+    color: $primary-color6;
+    transition: 0s all;
+
+}
+
+
+/* @media screen and(max-width: 1024px) {
+.contenedor-camara{
+    display: none;
+}
+    
+} */

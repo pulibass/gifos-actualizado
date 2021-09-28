@@ -1,0 +1,32 @@
+@import './variables';
+
+@mixin formato-document {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+}
+
+@mixin fuentes {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+@mixin main {
+    width: 90%;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    z-index: 1;
+}
+
+@mixin linea-arriba-abajo {
+    border-top: 5px solid $primary-color1;
+    border-bottom: 5px solid $primary-color1;
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+
+    
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass-css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Crear Gifos</title>
+</head>
+
+<body>
+    <div class="linea-arriba-abajo"></div>
+
+    <header>
+        <div class="contenedor-logo-menu">
+
+            <div class="contenedor-logo">
+                <button class="button-logo" type="button"><a href="./inicio.html"><img class="logo"
+                            src="./svg/modo normal/logo-desktop.svg" alt="logo"></button></a>
+            </div>
+          
+            <div class="contenedor-menu-burger">
+                <button class="button-menu-burger" onclick="changeImage();" type="button"><img class="menu-burger"
+                        id="hamburguesa" src="./svg/modo normal/burger.svg" alt="burger"></button>
+            </div>
+
+
+
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="modo-nocturno" id="modo-nocturno"><a href="#">Modo Nocturno</a></li>
+                    <li class="modo-diurno" id="modo-diurno"><a href="#">Modo Diurno</a></li>
+                    <div class="linea1"></div>
+                    <li class="link"><a href="./favoritos.html">Favoritos</a></li>
+                    <div class="linea1"></div>
+                    <li class="link"><a href="./misgifos.html">Mis GIFOS</a></li>
+                    <div class="linea1"></div>
+                    <li class="link"><button class="button-crear"> <a href="./creargifos.html"><img class="crear"
+                                    src="./svg/modo normal/button-crear-gifo.svg" alt="crear"></button></li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <main class="main">
+        <div class="contenedor-main">
+            <div class="contenedor-camara">
+                <div class="camara">
+                    <div>
+                        <img class="img-camara1" src="./svg/modo normal/camara.svg" alt="favoritos">
+                    </div>
+                    <div>
+                        <img class="img-camara2" src="./svg/modo normal/Path 2.svg" alt="favoritos">
+                    </div>
+                </div>
+
+                <div class=cuadro-camara>
+                    <div class="recuadro-camara">
+                        <div class="contenedor-paths1-2">
+                            <div class="path1">
+                            </div>
+                            <div class="path2">
+
+                            </div>
+                        </div>
+
+                        <div class="imagen-medio">
+                            <h2 class="titulo-crear-gifo">Aquí podrás <br>
+                                crear tus propios <span>GIFOS</span></h2>
+                            <p class="parrafo-crear-gifo">¡Crea tu GIFO en sólo 3 pasos! <br>
+                                (sólo necesitas una cámara para grabar un video)</p>
+                        </div>
+                        <div class="contenedor-paths3-4">
+                            <div class="path3">
+
+                            </div>
+                            <div class="path4">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="contenedor-numeros">
+                        <div class="button-numeros">
+                            <button class="numeros">1</button>
+                        </div>
+                        <div class="button-numeros">
+                            <button class="numeros">2</button>
+
+                        </div>
+                        <div class="button-numeros">
+                            <button class="numeros">3</button>
+
+                        </div>
+
+                    </div>
+                    <div class="linea-bajo-numeros">
+
+                    </div>
+
+                </div>
+                <div class="rollo-camara">
+                    <img class="img-rollo-camara" src="./svg/modo normal/pelicula.svg" alt="">
+                </div>
+            </div>
+
+
+
+            <section class="grabar">
+                <a href="#">COMENZAR</a>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h6 class="titulo-footer">Compartir en:</h6>
+        <div class="iconos-redes">
+            <div class="icono-facebook">
+                <a href="https://www.facebook.com/"><img src="./svg/modo normal/icon_facebook.svg"
+                        alt="icon_facebook"></a>
+            </div>
+            <div class="icono-twitter">
+                <a href="https://twitter.com/"><img src="./svg/modo normal/icon-twitter.svg" alt="icon_twitter"></a>
+
+            </div>
+            <div class="icono-instagram">
+                <a href="https://www.instagram.com/"><img src="./svg/modo normal/icon_instagram.svg"
+                        alt="icon_instagram"></a>
+
+            </div>
+
+        </div>
+        <div class="derechos">
+            <p>© GIFOS 2020 All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <div class="linea-arriba-abajo"></div>
+    <script src="java script/menuburger.js"></script>
+
+
+</body>
+
+</html>

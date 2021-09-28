@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass-css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>Mis GIFOS</title>
+</head>
+
+<body>
+    <div class="linea-arriba-abajo"></div>
+
+   
+    <header>
+        <div class="contenedor-logo-menu">
+
+            <div class="contenedor-logo">
+                <button class="button-logo" type="button"><a href="./inicio.html"><img class="logo" src="./svg/modo normal/logo-desktop.svg"
+                    alt="logo"></button></a>
+            </div>
+             
+            <div class="contenedor-menu-burger">
+                <button class="button-menu-burger" onclick="changeImage();" type="button"><img class="menu-burger" id="hamburguesa" src="./svg/modo normal/burger.svg"
+                        alt="burger"></button>
+            </div>
+          
+
+
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li class="modo-nocturno" id="modo-nocturno"><a href="#">Modo Nocturno</a></li>
+                    <li class="modo-diurno" id="modo-diurno"><a href="#">Modo Diurno</a></li>
+                    <div class="linea1"></div>
+                    <li class="link"><a href="./favoritos.html">Favoritos</a></li>
+                    <div class="linea1"></div>
+                    <li class="link"><a href="./misgifos.html">Mis GIFOS</a></li>
+                    <div class="linea1"></div>
+                    <li class="link"><button class="button-crear" > <a href="./creargifos.html"><img class="crear"
+                        src="./svg/modo normal/button-crear-gifo.svg" alt="crear"></button></li></a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="contenedor-main">
+            <div class="mis-gifos">
+                <img class="img-gifos" src="./svg/modo normal/icon-mis-gifos.svg" alt="favoritos">
+                <h2 class="titulo-mis-gifos">Mis GIFOS</h2>
+            </div>
+            <!-- 
+            <section class="contenedor-mis-gifos">
+
+
+                <div class="gifo1">
+
+                </div>
+
+                <div class="gifo2">
+
+                </div>
+
+                <div class="gifo3">
+
+                </div>
+
+                <div class="gifo4">
+
+                </div>
+
+                <div class="gifo5">
+
+                </div>
+
+                <div class="gifo6">
+
+                </div>
+
+                <div class="gifo7">
+
+                </div>
+
+                <div class="gifo8">
+
+                </div>
+
+                <div class="gifo9">
+
+                </div>
+
+                <div class="gifo10">
+
+                </div>
+
+                <div class="gifo11">
+
+                </div>
+
+                <div class="gifo12">
+
+                </div>
+
+            </section> -->
+
+            <section class="contenedor-ver-mas" >
+                <button class="ver-mas"> <img src="./svg/modo normal/CTA-ver-mas.svg" alt="ver-mas"></button> 
+            </section>
+
+            <section class="trending-segundo">
+
+                <h2 class="titulo-trending">Trending GIFOS</h2>
+
+                <p>Mira los ultimos </p>
+
+                <p> GIFOS de nuestra comunidad
+                </p>
+                <div class="gifos-comunidad">
+
+                </div>
+                <div class="contenedor-trending-gifos" id="contenedor-trending-gifos">
+                    <div class="contenedor-flecha-izquierda">
+                        <button role="button" id="flecha-izquierda" class="flecha-izquierda"><img
+                                src="./svg/modo normal/button-slider-left.svg" alt="button-left"></button>
+                    </div>
+
+                    <div class="contenedor-carousel" id="contenedor-carousel">
+                        <div class="carousel" id="carousel">
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/LXfpI3nNbfCm91llsA/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/Be9nOh8wsow8Kvt8Jx/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/2bJWG8k0HAktq/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/Ywxt9v39rUpmU/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/1eurDua2OvyrVIMyNg/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/xTiN0CNHgoRf1Ha7CM/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/FRoxTySN76Lja/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/2dQ3FMaMFccpi/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/LXfpI3nNbfCm91llsA/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/Be9nOh8wsow8Kvt8Jx/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/2bJWG8k0HAktq/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/Ywxt9v39rUpmU/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/1eurDua2OvyrVIMyNg/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/xTiN0CNHgoRf1Ha7CM/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/FRoxTySN76Lja/giphy.gif" alt=""></a>
+                            </div>
+                            <div class="gifo">
+                                <a href="#"><img class="img-gifos"
+                                        src="https://media.giphy.com/media/2dQ3FMaMFccpi/giphy.gif" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-flecha-derecha">
+                        <button role="button" id="flecha-derecha" class="flecha-derecha"><img
+                                src="./svg/modo normal/Button-Slider-right.svg" alt="button-right"></button>
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <h6 class="titulo-footer">Compartir en:</h6>
+        <div class="iconos-redes">
+            <div class="icono-facebook">
+                <a href="https://www.facebook.com/"><img src="./svg/modo normal/icon_facebook.svg"
+                        alt="icon_facebook"></a>
+            </div>
+            <div class="icono-twitter">
+                <a href="https://twitter.com/"><img src="./svg/modo normal/icon-twitter.svg" alt="icon_twitter"></a>
+
+            </div>
+            <div class="icono-instagram">
+                <a href="https://www.instagram.com/"><img src="./svg/modo normal/icon_instagram.svg"
+                        alt="icon_instagram"></a>
+
+            </div>
+
+        </div>
+        <div class="derechos">
+            <p>© GIFOS 2020 All Rights Reserved.</p>
+        </div>
+
+    </footer>
+    <div class="linea-arriba-abajo"></div>
+
+</body>
+<script src="java script/menuburger.js"></script>
+<script src="java script/carousel.js"></script>
+
+
+</html>

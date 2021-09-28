@@ -1,0 +1,723 @@
+@import './variables';
+@import './mixins';
+
+main {
+    @include main;
+    z-index: 1;
+}
+
+.contenedor-main {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    .titulo {
+        text-align: center;
+        margin: auto;
+        color: $primary-color1;
+        font-family: $fonts-primary1;
+
+        body.dark & {
+            color: $primary-color;
+
+        }
+
+    }
+
+    .titulo span {
+        color: $primary-color2;
+        font-family: $fonts-primary1;
+    }
+
+    .busqueda {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        max-width: 400px;
+
+        body.dark & {
+            background-color: $primary-color8;
+
+        }
+
+
+
+        .contenedor-img {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            max-width: 800px;
+
+            .busqueda-img {
+                width: 80%;
+                max-width: 1000px;
+
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+
+                body.dark & {
+                    background-color: $primary-color8;
+
+                }
+            }
+        }
+
+    }
+
+    .contenedor-barra-busqueda {
+        margin: auto;
+        width: 100%;
+        max-width: 1100px;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $primary-color1;
+        border-radius: 50px;
+        display: flex;
+        position: relative;
+
+
+        body.dark & {
+            background-color: $primary-color8;
+            border: 2px solid $primary-color6;
+
+        }
+
+        .input-busqueda {
+            margin: auto;
+            margin-left: 20px;
+            width: 100%;
+            height: 40px;
+            border: 0;
+            border-radius: 50px;
+            outline: none;
+
+
+            body.dark & {
+                background-color: $primary-color8;
+                color: $primary-color3
+            }
+        }
+
+        .input-busqueda::placeholder {
+            text-align: left;
+            border: 0;
+            background: transparent;
+
+        }
+
+        .lupa-busqueda {
+            width: 20px;
+            height: 30px;
+            background: none;
+            border: 0;
+            cursor: pointer;
+            position: absolute;
+            top: 3;
+            right: 15px;
+            margin: auto;
+
+
+        }
+
+       
+    }
+    
+
+
+    .contenedor-resultados-busqueda {
+        width: 110%;
+    }
+
+    .contenedor-resultados {
+        width: calc(200px * 1 + 3em);
+        margin: 15px auto;
+    }
+
+    .resultados-busqueda {
+        columns: 2;
+        column-gap: 1em;
+
+        .item {
+            margin-bottom: 1em;
+        }
+    }
+
+
+
+    .trending-primero {
+
+        margin: 30px auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        body.dark & {
+            color: $primary-color;
+
+        }
+    }
+
+    .trending-primero h2 {
+        font-weight: bold;
+        font-size: 16px;
+        text-align: center;
+        line-height: 25px;
+        color: $primary-color1;
+        font-family: $fonts-primary1;
+
+        body.dark & {
+            color: $primary-color;
+
+        }
+    }
+
+    .trending-primero p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 25px;
+        color: $primary-color1;
+        font-family: $fonts-primary1;
+
+        body.dark & {
+            color: $primary-color;
+
+        }
+    }
+
+    .trending-segundo {
+        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: $primary-color6;
+        height: 500px;
+    }
+
+    .trending-segundo {
+        margin: 100px auto;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: $primary-color6;
+
+
+        body.dark & {
+            background-color: $primary-color9;
+            color: $primary-color;
+
+        }
+    }
+
+    .trending-segundo h2 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 25px;
+        color: $primary-color1;
+        font-family: $fonts-primary1;
+
+        body.dark & {
+            color: $primary-color;
+
+        }
+    }
+
+    .trending-segundo p {
+        font-size: 16px;
+        text-align: center;
+        line-height: 25px;
+        color: $primary-color4;
+        font-family: $fonts-primary2;
+
+        body.dark & {
+            color: $primary-color;
+
+        }
+    }
+
+    .contenedor-trending-gifos {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        margin-top: 100px;
+
+
+        .contenedor-flecha-izquierda {
+            width: 100%;
+        }
+
+        .flecha-izquierda {
+            width: 25px;
+            height: 25px;
+            margin: auto;
+            margin-top: 90px;
+            cursor: pointer;
+            border: 0;
+
+        }
+
+        .contenedor-flecha-derecha {
+            width: 100%;
+        }
+
+        .flecha-derecha {
+            width: 25px;
+            height: 25px;
+            margin: auto;
+            margin-top: 90px;
+            cursor: pointer;
+            border: 0;
+
+
+
+        }
+
+
+    }
+
+    .contenedor-carousel {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+
+
+
+        .carousel {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+            scroll-behavior: smooth;
+            margin: auto;
+
+        }
+
+        .gifo {
+            width: 100%;
+
+        }
+
+
+        .img-gifos {
+            width: 215px;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            margin: 5px;
+            margin-left: 1px;
+
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .contenedor-main {
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .contenedor-resultados-busqueda {
+            width: 120%;
+        }
+
+        .contenedor-resultados {
+            width: calc(200px * 2 + 3em);
+            margin: 15px auto;
+        }
+
+        .resultados-busqueda {
+            columns: 3;
+            column-gap: 1em;
+
+            .item {
+                margin-bottom: 1em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contenedor-main {
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .contenedor-resultados-busqueda {
+            width: 180%;
+        }
+
+        .contenedor-resultados {
+            width: calc(200px * 3 + 3em);
+            margin: 15px auto;
+        }
+
+        .resultados-busqueda {
+            columns: 4;
+            column-gap: 1em;
+
+            .item {
+                margin-bottom: 1em;
+            }
+        }
+
+        .trending-segundo {
+            margin: 100px auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: $primary-color6;
+            height: 500px;
+        }
+
+        .contenedor-trending-gifos {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            margin-top: 100px;
+
+
+            .contenedor-flecha-izquierda {
+                width: 100%;
+            }
+
+            .flecha-izquierda {
+                width: 40px;
+                height: 40px;
+                margin: auto;
+                margin-top: 90px;
+                cursor: pointer;
+                border: 0;
+
+            }
+
+            .contenedor-flecha-derecha {
+                width: 100%;
+            }
+
+            .flecha-derecha {
+                width: 40px;
+                height: 40px;
+                margin: auto;
+                margin-top: 90px;
+                cursor: pointer;
+                border: 0;
+
+
+
+            }
+
+
+
+
+            .contenedor-carousel {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-flow: wrap;
+
+
+
+                .carousel {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    overflow: hidden;
+                    scroll-behavior: smooth;
+                    margin: auto;
+
+                }
+
+                .gifo {
+                    width: 100%;
+
+                }
+
+
+                .img-gifos {
+                    width: 300px;
+                    height: 200px;
+                    padding: 15px;
+
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contenedor-main {
+        margin: 80px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .titulo {
+            text-align: center;
+            margin: auto;
+            color: $primary-color1;
+            font-family: $fonts-primary1;
+        }
+
+        .titulo span {
+            color: $primary-color2;
+            font-family: $fonts-primary1;
+        }
+
+        .busqueda {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            max-width: 900px;
+
+
+
+
+            .contenedor-img {
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .busqueda-img {
+                    width: 50%;
+                    margin: auto;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+
+
+        .contenedor-barra-busqueda {
+            margin: auto;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid $primary-color1;
+            border-radius: 50px;
+            display: flex;
+
+            body.dark & {
+                background-color: $primary-color8;
+
+            }
+
+
+            .input-busqueda {
+                margin: auto;
+                width: 80%;
+                height: 40px;
+                border: 0;
+                border-radius: 50px;
+                outline: none;
+                margin-left: 30px;
+                font-size: 16px;
+
+
+                body.dark & {
+                    background-color: $primary-color8;
+
+                }
+            }
+
+            .input-busqueda::placeholder {
+                border: 0;
+                background: transparent;
+
+            }
+
+            .lupa-busqueda {
+                width: 30px;
+                height: 30px;
+                margin-top: 0px;
+                margin-right: 20px;
+                background: transparent;
+                cursor: pointer;
+
+
+            }
+
+        }
+
+        .contenedor-resultados-busqueda {
+            width: 100%;
+        }
+
+        .contenedor-resultados {
+            width: calc(200px * 4 + 3em);
+            margin: 15px auto;
+        }
+
+        .resultados-busqueda {
+            columns: 4;
+            column-gap: 1em;
+
+            .item {
+                margin-bottom: 1em;
+            }
+        }
+
+
+
+
+        .trending-primero {
+
+            margin: 30px auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .trending-primero h2 {
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            line-height: 25px;
+            color: $primary-color1;
+            font-family: $fonts-primary1;
+        }
+
+        .trending-primero p {
+            font-size: 16px;
+            text-align: center;
+            line-height: 25px;
+            color: $primary-color1;
+            font-family: $fonts-primary1;
+        }
+
+
+        .trending-segundo {
+            margin: 100px auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: $primary-color6;
+            height: 500px;
+        }
+
+        .trending-segundo h2 {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 25px;
+            color: $primary-color1;
+            font-family: $fonts-primary1;
+        }
+
+        .trending-segundo p {
+            font-size: 16px;
+            text-align: center;
+            line-height: 25px;
+            color: $primary-color4;
+            font-family: $fonts-primary2;
+        }
+
+        .contenedor-trending-gifos {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            margin-top: 100px;
+
+
+            .contenedor-flecha-izquierda {
+                width: 100%;
+            }
+
+            .flecha-izquierda {
+                width: 40px;
+                height: 40px;
+                margin: auto;
+                margin-top: 90px;
+                cursor: pointer;
+                border: 0;
+
+            }
+
+            .contenedor-flecha-derecha {
+                width: 100%;
+            }
+
+            .flecha-derecha {
+                width: 40px;
+                height: 40px;
+                margin: auto;
+                margin-top: 90px;
+                cursor: pointer;
+                border: 0;
+
+            }
+
+
+        }
+
+        .contenedor-carousel {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-flow: nowrap;
+
+
+            .carousel {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                margin: auto;
+
+            }
+
+            .gifo {
+                display: flex;
+                width: 300px;
+                height: 250px;
+                margin: auto;
+                align-items: center;
+                align-content: center;
+
+
+            }
+
+            gifos.hover {
+                transform: scale(1.2);
+                transform-origin: center;
+
+            }
+
+            .img-gifos {
+                width: 250px;
+                height: 200px;
+                margin: auto;
+                margin: 7px;
+
+            }
+
+        }
+    }
+
+}
